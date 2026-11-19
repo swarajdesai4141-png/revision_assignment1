@@ -1,0 +1,36 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #292524; }
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 8%; background: #24160f; color: white; flex-wrap: wrap; gap: 15px;
+}
+.logo { color: #ffbd59; font-size: 25px; font-weight: bold; text-decoration: none; }
+nav { display: flex; gap: 22px; flex-wrap: wrap; }
+nav a { color: white; text-decoration: none; }
+nav a:hover { color: #ffbd59; }
+.hero {
+  min-height: 430px; display: flex; align-items: center; padding: 55px 10%;
+  color: white; background: linear-gradient(90deg, #1c120ddd, #1c120d55),
+  url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600") center/cover;
+}
+.hero-content { max-width: 550px; }
+.tagline { color: #ffc56e; letter-spacing: 3px; font-weight: bold; }
+.hero h1 { font-size: clamp(36px, 6vw, 58px); margin: 12px 0; }
+.hero p { line-height: 1.7; }
+.button { display: inline-block; background: #e87924; color: white; padding: 13px 23px; border-radius: 6px; text-decoration: none; margin-top: 12px; }
+.button:hover { background: #bd5412; }
+.section { padding: 55px 8%; text-align: center; }
+.section h2 { font-size: 32px; margin-bottom: 8px; }
+.subtitle { color: #78716c; }
+.food-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 25px; margin-top: 30px; }
+.food-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px #00000015; transition: transform .25s; }
+.food-card:hover { transform: translateY(-7px); }
+.food-card img { width: 100%; height: 180px; object-fit: cover; }
+.food-card h3 { color: #a34d16; }
+.food-card p { padding: 0 12px 15px; color: #78716c; }
+.offer { text-align: center; padding: 38px 15px; background: #fff1dc; }
+.offer h2 { color: #9a3412; font-size: 30px; }
+.light-button { background: #9a3412; }
+footer { text-align: center; padding: 25px; background: #24160f; color: white; line-height: 1.6; }
+@media (max-width: 600px) { .navbar { justify-content: center; } nav { justify-content: center; } }

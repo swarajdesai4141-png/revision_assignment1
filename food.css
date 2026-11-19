@@ -1,0 +1,81 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: #ffc107 !important;
+}
+
+.hero {
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    ),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400");
+
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.food-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.food-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.food-card .card-body {
+    padding: 20px;
+}
+
+.btn-danger {
+    background-color: #e63946;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c1121f;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero {
+        padding: 65px 15px;
+    }
+
+    .food-card img {
+        height: 190px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Login and Signup</title>
+  <link rel="stylesheet" href="practical5.css">
+</head>
+<body>
+  <main class="forms">
+    <section class="form-card">
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Login to your account</p>
+      <form action="#" method="post">
+        <label for="login-email">Email Address</label>
+        <input id="login-email" type="email" placeholder="Enter your email" required>
+        <label for="login-password">Password</label>
+        <input id="login-password" type="password" placeholder="Enter your password" minlength="6" required>
+        <button type="submit">Login</button>
+      </form>
+      <p class="note">New here? Create an account using the form below.</p>
+    </section>
+
+    <section class="form-card signup">
+      <h1>Create Account</h1>
+      <p class="subtitle">Sign up to get started</p>
+      <form action="#" method="post">
+        <label for="full-name">Full Name</label>
+        <input id="full-name" type="text" placeholder="Enter your name" required>
+        <label for="signup-email">Email Address</label>
+        <input id="signup-email" type="email" placeholder="Enter your email" required>
+        <label for="signup-password">Password</label>
+        <input id="signup-password" type="password" placeholder="At least 6 characters" minlength="6" required>
+        <label for="confirm-password">Confirm Password</label>
+        <input id="confirm-password" type="password" placeholder="Confirm your password" minlength="6" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
